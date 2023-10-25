@@ -1,32 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-<style>
-img {
-   float: right;
-   max-width:50% 
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Crie suas Histórias</title>
 </head>
-<body>	
-
-<h2>A importancia do Telescopio Hubble</h2>
-
-<p>Porque o telescopio hubble foi tão importante para a astronomia moderna?</p>
-<img src="https://media.istockphoto.com/id/157308245/pt/foto/telesc%C3%B3pio-espacial-hubble-com-terra.jpg?s=612x612&w=0&k=20&c=BtdtA4G7Tfoc5EBLBzyLK1Ggu114qGwivQg3UYYRwEY=" alt="Telescópio Hubble">
-<p>O Telescópio Espacial Hubble, frequentemente referido como Hubble, é um observatório astronômico localizado em órbita terrestre. Ele é um dos instrumentos científicos mais famosos e importantes já desenvolvidos, permitindo que os astrônomos observem o universo de maneira detalhada e precisa a partir de uma posição fora da atmosfera terrestre.</p>
-<p>O Hubble foi lançado pela NASA em 24 de abril de 1990 a bordo do ônibus espacial Discovery. Ele leva o nome do astrônomo Edwin Hubble, que desempenhou um papel fundamental na expansão do entendimento sobre a expansão do universo.</p>
-
-<p>As principais características que tornam o Telescópio Espacial Hubble especial incluem:</p>
-
-<p>Imagens de Alta Resolução: Estar localizado fora da atmosfera terrestre permite que o Hubble capture imagens com uma clareza incrível e sem a interferência dos efeitos atmosféricos, como distorções causadas pela turbulência.</p>
-
-<p>Variedade de Observações: O Hubble é capaz de observar objetos astronômicos em várias faixas de comprimento de onda, desde a luz visível até o infravermelho próximo e o ultravioleta. Isso permite aos astrônomos estudar uma ampla gama de fenômenos cósmicos.</p>
-
-<p>Descobertas Científicas: Desde o seu lançamento, o Hubble fez uma série de descobertas científicas notáveis, incluindo a determinação da taxa de expansão do universo, a observação de buracos negros supermassivos, o estudo de exoplanetas, a caracterização de galáxias distantes e muito mais.</p>
-
-<p>Manutenção e Atualizações: Durante suas décadas de operação, o Hubble passou por várias missões de manutenção tripuladas, durante as quais astronautas realizaram reparos, substituíram instrumentos antigos e instalaram novos equipamentos para melhorar suas capacidades.</p>
-
+<body>
+    <div class="container">
+        <h1>Crie suas Histórias</h1>
+        <input type="text" id="storyTitle" placeholder="Título da História">
+        <textarea id="storyText" placeholder="Escreva sua História"></textarea>
+        <button id="addParagraph">Adicionar Parágrafo</button>
+        <button id="createStory">Criar História</button>
+        <div id="storyContainer"></div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
-
