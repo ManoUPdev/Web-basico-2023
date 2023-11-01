@@ -20,11 +20,19 @@ document.addEventListener('DOMContentLoaded', () => {
         const story = paragraphs.join('\n\n');
         if (title && story) {
             const storyElement = document.createElement('div');
-            storyElement.innerHTML = `<h2>${title}</h2><p>${story}</p>`; // Use backticks (`) para interpolação de strings
+            storyElement.innerHTML = `<h2>${title}</h2><p>${story}</p>`; 
+            const deleteButton = document.createElement('div');
+            deleteButton.className = 'deleteButton';
+            deleteButton.textContent ='Excluir';
+            deleteButton.addEventListener('click',() =>{
+                storyContainer.removeChild(storyElement);
+
+            });
+            storyElement.appendChild(deleteButton);
             storyContainer.appendChild(storyElement);
 
-            storyTitleInput.value = ''; // Correção: atribuição de valor
-            storyTextInput.value = ''; // Correção: atribuição de valor
+            storyTitleInput.value = ''; 
+            storyTextInput.value = ''; 
             paragraphs = [];
         }
     });
